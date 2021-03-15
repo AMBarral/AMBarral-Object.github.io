@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Object</title>
+
+<h1 style="font-family:futura;">Choose a Curtain to win a Prize!</h1>
+
+    <script>
+
+    	function nameOfFunction() {
+
+    	}
+
+
+    	var one = {
+    		value: ' $5', 
+    		prize: 'Dunkin Donuts Gift Card',
+    		notice: function() {
+                alert("You win a " + this.prize  + " worth"  + this.value);
+    		} 
+    	}
+
+        var two = {
+            value: ' $1,000,000', 
+            prize: 'Grand Prize of'  ,
+            notice: function() {
+                alert("You win the " + this.prize + this.value);
+            } 
+        }
+
+         var three = {
+            value: ' $5,000!', 
+            prize: 'Vaction to Europe',
+            notice: function() {
+                alert("You win a " + this.prize  + " worth"  + this.value);
+            } 
+        }
+
+    
+
+
+    </script>
+
+  </head>
+
+  <body>
+
+  	<button onclick="one.notice()">Curtain Number 1</button>
+    <button onclick="two.notice()">Curtain Number 2</button>
+    <button onclick="three.notice()">Curtain Number 3</button>
+
+  </body>
+
+ </html> 
